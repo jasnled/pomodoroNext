@@ -1,0 +1,58 @@
+@import 'vars';
+
+.box{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    padding:$--bordSmall ;
+    color:$--cBeige;
+    font-size: $--sFontS;
+    border: 5px solid beige;
+    border-radius: 20px;   
+    margin:  $--bordMed 0;
+    background-color: $--tomato;
+}
+
+.box >span {
+
+    border-bottom: 1px solid $--cBeige;
+    font-size: $--sFontP;
+    justify-items: center;
+    margin-bottom: 20px;
+    
+}
+.task-element button{
+    color:$--gray;
+    background-color: $--tomato;
+    padding: 4px;
+    border: 2px solid $--cBeige;
+    background-color: $--tomato;
+    border-radius: $--bordSmall;
+    font-size: $--sFontS;
+    cursor: pointer;
+}
+.task-element button:hover{
+    background-color: $--tomatoTouch;
+    transform: translateY(3px);
+}
+.task-element span{ 
+    grid-column: 1 / 4 ;
+    place-self: center;
+}
+
+.task-element{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    column-gap: 15px;
+}
+
+
+
+@media screen and (max-width:1000px){
+    
+    .box-tasks{
+        grid-column: 1 / 3;
+        grid-row: 2 / 3 ;
+    }
+}

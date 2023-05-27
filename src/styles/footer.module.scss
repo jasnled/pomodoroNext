@@ -1,0 +1,61 @@
+@import '_vars';
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: $--tomato;
+    
+}
+
+.container-footer{
+    color: $--cBeige;
+    border-top: 1px $--cBeige solid;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: 70%;
+    align-items: center;
+}
+
+.github-icon{
+    height: 40px;
+    width: 40px;
+    fill: $--cBeige;
+}
+
+.linkedin-icon{
+    height: 40px;
+    width: 40px;
+    fill: $--cBeige;
+}
+
+
+.rights{
+    font-size: $--sFontS;
+}
+
+
+@media (max-width: 490px) {
+    .container-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+    .rights{
+        height: 35%;
+    }
+    .icons{
+        height: 35%;
+    }
+    .github-icon{
+        height: 30px;
+        width: 30px;
+    }
+    
+    .linkedin-icon{
+        height: 30px;
+        width: 30px;
+    }
+}

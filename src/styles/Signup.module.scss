@@ -1,0 +1,41 @@
+@import "vars";
+
+.signup{
+    display: flex;
+    flex-direction: column;
+    color: $--tomato;
+    padding: 80px;
+}
+
+.signup div{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup form{
+    display: grid;
+    grid-template-columns: minmax(200px, 300px);
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+}
+
+.signup input{
+    background-color: $--tomato;
+    border: none;
+    border-radius: $--bordSmall;
+    height: 30px;
+    color: $--cBeige;
+}
+
+.signup button{
+    width: 30%;
+    background: $--tomato;
+    border-radius: $--bordSmall;
+    color: $--cBeige;
+
+}
+
+.signup button:hover{
+    background: $--tomatoTouch;
+    transform: scale(1.1);
+}

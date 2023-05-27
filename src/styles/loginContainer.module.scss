@@ -1,0 +1,88 @@
+@import 'vars';
+
+
+.login-container form{
+    padding: 80px;
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-template-columns: minmax(200px, 400px);
+    grid-template-rows: repeat(5, auto);
+    border-radius: $--bordMed;
+    background-color: $--tomato;
+}
+
+.login-container div{
+    display: flex;
+    flex-direction: column;
+}
+.forgot-password{
+    font-size: $--sFontS;
+}
+.login-container button{
+    width: 100px;
+    background-color: $--gray;
+    border: none;
+    border-radius: $--bordSmall;
+    color: $--tomato
+}
+
+.login-container button:hover{
+    transform: scale(1.1);
+    background-color: $--grayTouch;
+}
+
+.login-container input{
+    color: $--tomato;
+    border: none;
+    background-color: $--cBeige;
+    border-radius: $--bordSmall;
+    padding: 3px;
+}
+
+.login-container label{
+    color: $--cBeige;
+}
+
+.sign-up-container{
+    text-decoration: none;
+    font-size: $--sFontS;
+}
+
+.sign-up{
+    text-decoration: none;
+}
+
+.login-container div{
+    color:$--cBeige;
+    display: flex;
+    
+}
+
+@media (max-width: 700px) {
+    .login-container form{
+        background: none;
+
+    }
+
+    .login-container div{
+        color:$--tomato
+    }
+
+    .login-container input{
+        background: none;
+        border: 2px solid $--tomato;
+
+    }
+
+    .login-container label{
+        color: $--tomato;
+    }
+    .login-container button{
+        background-color: $--tomato;
+        color: $--cBeige;
+    }
+    .login-container button:hover{
+        background-color: $--tomatoTouch;
+    }
+}

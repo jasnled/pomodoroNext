@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI" ,"Quicksand", sans-serif;
+}
+a[href],
+input[type="submit"],
+input[type="image"],
+label[for],
+select,
+button,
+.pointer {
+  cursor: pointer;
+}
+
+.main-container{
+  display: relative;
+  margin: 0;
+  padding: 0;
+  height: calc(100vh - 160px);
+  top:80px
+}

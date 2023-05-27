@@ -1,0 +1,50 @@
+@import 'vars';
+
+.recovery-container {
+    font-size: $--fontP;
+    color: $--tomato;
+    padding: 80px;    
+    margin: 50px;
+
+}
+
+.recovery-container form{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: minmax(200px, 400px);
+    grid-template-rows: repeat(3, auto);
+}
+
+.recovery-container input{
+    padding: 5px;
+    border: none;
+    background-color: $--tomato;
+    color: $--cBeige;
+    width: auto;
+    border-radius: $--bordSmall;
+
+  
+}
+
+.recovery-container div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.recovery-container button{
+    padding: 7px 0;
+    width: 100px;
+    border: none;
+    background-color: $--tomato;
+    border-radius: $--bordSmall;
+    color: $--cBeige;
+    font-size: $--sFontS;
+    justify-self: right;
+}
+
+.recovery-container button:hover{
+    transform: scale(1.1);
+    background-color: $--tomatoTouch;
+}
+
