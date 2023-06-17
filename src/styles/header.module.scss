@@ -26,8 +26,10 @@
     padding: 1rem 3rem;
     color: $--gray; 
     padding: 5px;
+    width: auto;
 
 }
+
 .menu-item.report{
     border: 1px solid $--gray;
     border-radius:6px;
@@ -35,19 +37,28 @@
     cursor: pointer;
 }
 
+.menu-item:hover{
+    transform: scale(1.02);
+}
+
 .menu-item.report:hover{
     background-color: $--tomatoTouch;
-    transform: scale(1.04);
 }
 
 .menu-item:nth-child(3){
     justify-self: right;
     margin-right: 30px;
 }
+
+.menu-item:nth-child(1){
+    width: 120px;
+    margin-left: 20px;
+}
+
 .mobile-menu{
     display: none;
 }
-@media (max-width: 700px) {
+@media (max-width: 761px) {
     .menu-item {
         display: none;
     }
@@ -59,5 +70,10 @@
         top: 25px;
         left: 15px;
         fill: $--cBeige;
+    }
+
+    .mobile-menu:hover{
+        transform: scale(1.1);
+        cursor: pointer;
     }
 }

@@ -1,0 +1,26 @@
+@import 'vars';
+
+#alert{
+    width: calc(100% - 2px);
+    height: 100px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    border: 2px $--tomato solid;
+}
+
+#message-alert{
+    width: 100%;
+    color: $--tomato;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#close-alert{
+    cursor: pointer;
+    color:$--tomato;
+    width: 20px;
+}
+

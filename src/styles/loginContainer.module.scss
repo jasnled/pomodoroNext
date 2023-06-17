@@ -14,7 +14,9 @@
 
 .login-container div{
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+    color:$--cBeige;
+    
 }
 .forgot-password{
     font-size: $--sFontS;
@@ -38,6 +40,7 @@
     background-color: $--cBeige;
     border-radius: $--bordSmall;
     padding: 3px;
+    width: calc(100% - 6px);
 }
 
 .login-container label{
@@ -53,10 +56,27 @@
     text-decoration: none;
 }
 
-.login-container div{
-    color:$--cBeige;
+#container-password{
     display: flex;
-    
+    flex-direction: row;
+    width: 100%;
+    background-color: $--cBeige;
+    border-radius: $--bordSmall;
+}
+
+#container-password input{
+    background: none;
+}
+
+.icon-eyeoff:nth-child(2) {
+    color: $--tomato;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+
+.login-container input:focus{
+    outline-style: none;
 }
 
 @media (max-width: 700px) {
@@ -84,5 +104,16 @@
     }
     .login-container button:hover{
         background-color: $--tomatoTouch;
+    }
+    #container-password input{
+        background: none;
+        border:none
+    }
+
+    #container-password{
+
+        background: none;
+        border-radius: $--bordSmall;
+        border: 2px solid $--tomato;
     }
 }
