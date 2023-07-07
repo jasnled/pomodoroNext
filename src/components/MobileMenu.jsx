@@ -16,8 +16,8 @@ const MobileMenu = ({toggleMobileMenu}) => {
                 <Link href={"/login"} className = {styles["mobile-menu-item"]} onClick={toggleMobileMenu}>log in</Link>:
                 <div className={styles.user} >
                     <Link href={"/report"} className = {styles["mobile-menu-item"]} onClick={toggleMobileMenu}>report</Link>
-                    <Link href={"#"} className = {styles["mobile-menu-item"]} onClick={toggleMobileMenu}>profile</Link>
-                    <Link href={"#"} className = {styles["mobile-menu-item"]} onClick={toggleMobileMenu}>config</Link>
+                    <Link href={"/profile"} className = {styles["mobile-menu-item"]} onClick={toggleMobileMenu}>profile</Link>
+                    <Link href={"/config"} className = {styles["mobile-menu-item"]} onClick={toggleMobileMenu}>config</Link>
                     <Link href={"/login"} className = {styles["mobile-menu-item"]} onClick={()=>{handleLogOut()}}>log out</Link>                    
                 </div>
                 }

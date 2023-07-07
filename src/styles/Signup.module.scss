@@ -5,6 +5,7 @@
     flex-direction: column;
     color: $--tomato;
     padding: 80px;
+    width: 300px;
 }
 
 .signup div{
@@ -26,6 +27,11 @@
     height: 30px;
     color: $--cBeige;
 }
+
+.signup input:focus{
+    outline-style: none;
+}
+
 
 .signup button{
     width: 30%;

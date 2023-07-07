@@ -7,12 +7,15 @@
     background-color: $--cBeige;
     border-radius: $--bordSmall;
     font-size: $--sFontS;
+    color: $--tomato;
+}
 
+.input:focus{
+    outline-style: none;
 }
 
 .bAdd{
-    width: 20%;
-    margin-left: 10px;
+    width: 80px;
     cursor: pointer;
     padding: 4px;
     border: 1px solid $--gray;
@@ -20,6 +23,7 @@
     border-radius: $--bordSmall;
     font-size: $--sFontS;
     color:$--gray;
+    margin-left: 10px;
 
 }
 
@@ -29,9 +33,21 @@
 }
 
 .container-input{
-    margin-top: 20px;
     width: auto;
     height: 40px;
     display: flex;
+    justify-content: space-between;
 
+}
+.container-input form{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+} 
+
+@media screen and (max-width:1000px){
+
+    .container-input{
+        grid-column: 1 / 4;
+    }
 }

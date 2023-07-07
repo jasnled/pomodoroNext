@@ -7,6 +7,7 @@ import { useAlert } from "@/hooks/useAlert";
 import { loginSchema } from "@/schemas/authSchema";
 import { Icon } from 'react-icons-kit';
 import {eyeOff} from 'react-icons-kit/feather/eyeOff';
+import {eye} from 'react-icons-kit/feather/eye'
 
 
 const LoginContainer = () => {
@@ -22,20 +23,22 @@ const LoginContainer = () => {
             setTypeInput('password');
         }
     }
-    const handleSubmit = (event) =>{
+    const handleSubmit = async (event) =>{
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         const { error, value } = loginSchema.validate({email, password});
-        if(!error){
-            
-            auth.signIn(email, password);
-            if (!auth.user && !alert.alert.active){
+    
+        if(!error){        
+            await auth.signIn(value.email, value.password);
+            console.log(auth.user);
+        }
+        if (!auth.user && !alert.alert.active){
+            setTimeout(()=>{
                 alert.toggleActiveAlert();
-            }
-        }else{
-            console.log("error de validacion");
-        }  
+            },1000)
+            
+        }
     };
     return (
         <>
@@ -48,10 +51,10 @@ const LoginContainer = () => {
                       <input ref={emailRef} required type="text"  />
                   </div>
                   <div>
-                      <label htmlFor="password" placeholder="enter your password">username</label>
+                      <label htmlFor="password" placeholder="enter your password">password</label>
                       <div id={styles["container-password"]}>
                           <input ref={passwordRef} required type={typeInput}/>
-                          <Icon className={styles["icon-eyeoff"]} onClick={handleEyeOff} icon={eyeOff}/>
+                          <Icon className={styles["icon-eyeoff"]} onClick={handleEyeOff} icon={(typeInput == 'password')? eyeOff :eye}/>
                       </div>
                   </div>
                   <div>

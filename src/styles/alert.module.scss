@@ -2,7 +2,7 @@
 
 #alert{
     width: calc(100% - 2px);
-    height: 100px;
+    height: 140px;
     background: none;
     display: flex;
     flex-direction: row;
@@ -11,6 +11,7 @@
 }
 
 #message-alert{
+    display: flex;
     width: 100%;
     color: $--tomato;
     align-items: center;

@@ -1,0 +1,14 @@
+@import 'vars';
+
+.timer {
+        
+    background:$--tomato;
+    display: flex;
+    color:$--cBeige;
+    width: 150px;
+    height: 100px;
+    border-radius: $--bordMed;
+    justify-content: center;
+    align-items: center;
+    font-size: $--primFont;
+}

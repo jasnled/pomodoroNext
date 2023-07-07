@@ -22,8 +22,11 @@
     color: $--cBeige;
     width: auto;
     border-radius: $--bordSmall;
-
   
+}
+
+.recovery-container input:focus{
+    outline-style: none;
 }
 
 .recovery-container div{

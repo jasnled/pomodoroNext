@@ -1,0 +1,54 @@
+@import 'vars';
+
+
+.delete{
+    width: 400px;
+};
+
+.delete-container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    align-items:center;
+    justify-content: center;
+};
+
+.delete-container form{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+};
+
+.delete-container span{
+    color: $--tomato;
+    margin: 10px 0;
+
+};
+
+.delete-container input{
+    background-color: $--tomato;
+    border: none;
+    border-radius: $--bordSmall;
+    margin: 10px 0;
+    color: $--cBeige;
+    width: 100%;
+
+};
+
+.delete-container input:focus{
+    outline-style: none;
+};
+
+.delete-container button{
+    border: none;
+    border-radius: $--bordSmall;
+    background-color: $--tomato;
+    margin: 10px 0;
+    width: 200px;
+    color: $--cBeige;
+};
+
+.delete-container button:hover{
+    background-color: $--tomatoTouch;
+};

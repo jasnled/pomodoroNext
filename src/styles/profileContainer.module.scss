@@ -1,0 +1,28 @@
+@import "vars";
+
+.title-profile{
+    color: $--tomato;
+}
+
+.user-profile{
+    color: $--tomato;
+}
+
+.button-profile{
+    width: 150px;
+    background-color: $--gray;
+    border: 2px $--tomato solid;
+    border-radius: $--bordSmall;
+    color: $--tomato;
+    margin: 10px 0px;
+}
+
+.button-profile:hover{
+    background-color: $--grayTouch;
+    transform: scale(1.1);
+}
+
+.buttons-container{
+    display: flex;
+    flex-direction: column;
+}

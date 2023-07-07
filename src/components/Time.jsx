@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/styles/timer.module.scss';
+import styles from '@/styles/time.module.scss';
 
 const Time = ({tim}) => {
     
@@ -10,7 +10,7 @@ const Time = ({tim}) => {
     sec = sec < 10 ? `0${sec}`: sec;
 
     return (
-        <div className={styles.timer}>{min}:{sec}</div>
+        <div className={styles.timer}>{`${min}:${sec}`}</div>
     );
 }
 

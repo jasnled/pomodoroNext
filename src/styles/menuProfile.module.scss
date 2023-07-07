@@ -22,7 +22,9 @@
     flex-direction: column;
     justify-content: center;
 }
-.user span{
+.user-item{
+    text-decoration: none;
+    color: $--cBeige;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -40,7 +42,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 761px) {
     .menu-profile{
         display: none;
     }
