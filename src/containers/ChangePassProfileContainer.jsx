@@ -54,9 +54,7 @@ const ChangePassContainer = () => {
             
             try{
                 const data = {newPassword: value.newPassword};
-                console.log(data);
                 await axios.post(endPoint.profile.changePassword, data, options);
-                console.log("cambi");
             }catch(err){
                 alert.setAlert({
                     ...alert.alert,

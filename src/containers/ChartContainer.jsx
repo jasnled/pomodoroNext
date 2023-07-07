@@ -10,7 +10,6 @@ const chart = ({pomodoros, setChart, setPages, pages}) => {
   const handleClose = () => {
     setChart(false);
   };
-  console.log(pomodoros?.timeSpent);
   const data = {
     datasets:[{ //
       label: 'Hours', 

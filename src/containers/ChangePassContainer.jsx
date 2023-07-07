@@ -43,7 +43,6 @@ const ChangePassContainer = () => {
             if(token){
                 try{
                     const data = {token , newPassword: value.newPassword};
-                    console.log(data);
                     await axios.post(endPoint.auth.changePassword, data, options);
                 }catch(err){
                     alert.setAlert({

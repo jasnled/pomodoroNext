@@ -40,8 +40,6 @@ const TimerContainer = () => {
                 }catch(error){
                 }
             }
-            
-            
             const initialTime = new Date;
             auth.timer(auth.time, initialTime, newPomodoro, currentT);
             

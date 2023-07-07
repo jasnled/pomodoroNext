@@ -45,8 +45,6 @@ const Report = () => {
     useEffect(() => {
         getTasks();
         pomodoros.getPomodoros();
-        console.log('trayendo pomo task');
-
     },[auth.user, auth.run]);
 
     useEffect(()=>{

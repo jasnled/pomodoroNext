@@ -42,9 +42,7 @@ const ConfigContainer = () => {
         }
       };
       if(Object.entries(data).length){
-        console.log(Object.entries(data).length);
         const {error, value} = changeConfigSchema.validate(data);
-        console.log(error)
         if(error){
           alert.setAlert({
             ...alert.alert,

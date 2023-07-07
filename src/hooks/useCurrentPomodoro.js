@@ -18,10 +18,6 @@ const useCurrentPomodoro = () => {
         var newPomodoro
         try {
             const corretedValue = Math.abs(data.value);
-            console.log('dta')
-            console.log(data);
-            console.log('antes de crear');
-            console.log(pomodoro)
             newPomodoro = await axios.post(endPoint.pomodoro.create,{value: corretedValue}, options);
         } catch (error) {
             
@@ -32,7 +28,6 @@ const useCurrentPomodoro = () => {
     
     const updatePomodoro = async (id, data) => {
         try {
-            console.log(id);
             await axios.patch(endPoint.pomodoro.update(id),{...data } ,options);
         } catch (error) {
             return;

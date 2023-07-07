@@ -54,10 +54,6 @@ const usePomodoros = () => {
         const entries = new Map(timeSpentForDay);
         const obj = Object.fromEntries(entries);
         setTimeSpent(obj);
-        console.log(obj)
-
-
-        
     }
 
 

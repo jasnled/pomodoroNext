@@ -79,9 +79,7 @@ function useProviderAuth(){
                 diffTim /= 1000;
                 const diffSeg = Math.trunc(diffTim);
                 if (diffSeg < timeMax){
-                    console.log(currentT);
                     if(!opBreak ){
-
                         try {
                             if(diffSeg%7 == 0){
                                 currentPomodoro.updatePomodoro(pomodoro.id, {timeSpent: diffSeg}, options);
